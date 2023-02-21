@@ -1,6 +1,36 @@
 body {
     padding: 0;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+
+    /*animation*/
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    50% {
+        top: 600px;
+    }
+
+    100% {
+        top: 0px;
+    }
 }
 
 .bigBox {
@@ -17,3 +47,4 @@ body {
     height: 100px;
     display: inline-block;
 }
+
