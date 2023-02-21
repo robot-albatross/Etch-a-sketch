@@ -22,21 +22,18 @@ body {
     background-color: red;
     border-radius: 50%;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
 
     /*animation*/
     animation-name: move;
-    animation-duration: 3s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
 }
 
 @keyframes move {
-    50% {
-        top: 600px;
-    }
-
     100% {
-        top: 0px;
+        top: 600px;
+        opacity: 0;
     }
 }
 
